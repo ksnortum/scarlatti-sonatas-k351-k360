@@ -34,6 +34,10 @@ If you don't want to print bar numbers over the first measure of every system, o
 
 Because if [this bug](https://gitlab.com/lilypond/lilypond/-/work_items/4391), `articulate.ly` cannot be used in a piece that starts with a grace note.  K356's MIDI output is affected by this, so `articulate.ly` is not used.
 
+## MIDI output in K360
+
+The `articulate.ly` script renders trills in an allegro tempo too fast.  Sometimes a note from the trill will "ring through", as though the sustain pedal had been pressed.  This happens in sonata K360.
+
 ## Thanks
 
 Thanks to the folks at the [LilyPond user's mailing list](https://lilypond.org/doc/v2.26/Documentation/web/contact) for all the help getting LilyPond to do what I wanted.
